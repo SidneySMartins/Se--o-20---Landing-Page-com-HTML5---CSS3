@@ -1,0 +1,29 @@
+.responsive-table {
+  display: flex;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+table {
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td,
+table th {
+  white-space: nowrap;
+  text-align: left;
+  padding: 1rem;
+  border: 0.1rem solid var(--light-gray-color);
+}
+tfoot td,
+table th {
+  background: var(--light-gray-color);
+}

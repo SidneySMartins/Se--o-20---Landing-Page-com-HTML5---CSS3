@@ -1,10 +1,12 @@
 .menu {
-  background: var(--color-white);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 0.1rem solid var(--light-gray-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 9999;
 }
 .main-content,
 .menu-content {
@@ -17,12 +19,11 @@
 .menu-content {
   display: flex;
   justify-content: space-between;
-  flex-flow: row column;
-  text-align: end;
+  flex-flow: row wrap;
+  text-align: center;
   padding-top: 0;
   padding-bottom: 0;
 }
-
 .menu-items {
   display: flex;
   gap: 3rem;
@@ -30,4 +31,25 @@
 .link-menu {
   display: block;
   color: var(--primary-color);
+  padding: 2rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+.link-menu::after {
+  content: '';
+  position: absolute;
+  bottom: 0.8rem;
+  left: 70%;
+  width: 0;
+  background: var(--secondary-color);
+  height: 0.2rem;
+  transition: all 300ms ease-in-out;
+}
+.link-menu:hover::after {
+  width: 80%;
+  left: 15%;
+}
+
+.menu-spacing {
+  min-height: 6.5rem;
 }

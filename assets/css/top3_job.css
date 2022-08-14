@@ -1,0 +1,17 @@
+.top3-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 65rem;
+  text-align: center;
+}
+
+.top3-content h2 {
+  margin: 0 auto;
+  padding-top: 5.5rem;
+  padding-bottom: 6rem;
+}
+
+.top3-content p {
+}

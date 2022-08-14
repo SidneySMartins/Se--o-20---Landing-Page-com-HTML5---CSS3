@@ -1,0 +1,36 @@
+.services-content {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  counter-reset: grid-counter;
+}
+.services-title {
+  margin-bottom: 1rem;
+}
+.services-description {
+  padding-bottom: 10rem;
+}
+.recent_work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.recent_work h3 {
+  font-size: 3rem;
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+.recent_work h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 6rem;
+  font-style: italic;
+  top: -2.8rem;
+  left: -1.8rem;
+  transform: rotate(5deg);
+}

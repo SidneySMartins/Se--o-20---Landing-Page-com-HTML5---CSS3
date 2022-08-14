@@ -1,0 +1,36 @@
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+  /* top: -6rem; */
+}
+.contact-text-content,
+.contact-img-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.contact-img-content img {
+  max-width: 100%;
+  min-height: auto;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--gap);
+}
+
+.form-group {
+  flex: 1 1 auto;
+  min-width: 320px;
+}
