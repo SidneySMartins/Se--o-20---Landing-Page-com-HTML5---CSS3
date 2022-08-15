@@ -27,6 +27,45 @@
   gap: var(--gap);
 }
 .form-group {
-  flex: 1 1 auto;
-  min-width: 320px;
+  flex: 1 1 40rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--color-white);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0.5rem 0.3rem var(--secondary-color);
+}
+.form-group ::placeholder {
+  color: var(--light-gray-color);
+}
+
+.form-group button {
+  margin-top: 2.5rem;
+  border: 0.5rem solid var(--color-white);
+  border-radius: 0.5rem;
+  background: none;
+  color: var(--color-white);
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 800ms ease-in-out;
+}
+.form-group button:hover {
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  background: var(--color-white);
+  color: var(--primary-color);
 }

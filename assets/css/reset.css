@@ -107,3 +107,17 @@ p {
   bottom: 3.2rem;
   opacity: 1;
 }
+
+.full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  padding: 1.5rem;
+}
